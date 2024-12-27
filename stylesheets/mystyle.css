@@ -149,88 +149,73 @@ img {
     color: #8197AE;
 }
 
-/* Events section */
+/* Experience section */
 
-.events-section {
+.work-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 8rem 2rem;
-    height: 100%;
+    height: 100vh;
+    padding: 10rem 2rem;
     background: linear-gradient(128deg, #2E2C34 0%, #26373B 100%);
 }
 
-.events-section-header {
+.work-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid #ffffff;
 }
 
 @media (max-width: 28.75rem) {
-    .events-section-header {
+    .work-section-header {
         font-size: 4rem;
     }
 }
 
-.events-grid {
-    display: table;
+.work-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
-    height: 100%;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 6rem auto;
     margin-bottom: 6rem;
 }
 
-.events-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem;
-    margin-bottom: 2rem;
-}
-
 @media (max-width: 30.625rem) {
-    .events-section {
+    .work-section {
         padding: 6rem 1rem;
     }
 
-    .events-grid {
+    .work-grid {
         grid-template-columns: 1fr;
     }
 }
 
-.event {
+.work {
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
 }
 
 .camera {
-    color: var(--main-gray);
-    transition: color 0.3s ease-out;
+    color: #ffffff;
+    transition: color 0.2s ease-out;
 }
 
-.event:hover .camera {
-    color: #ff7f50;
+.work:hover .camera {
+    animation: glow 1s ease-in-out infinite alternate;
+    color: grey;
 }
 
-.event-image {
+.work-image {
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
 }
 
-.event-title {
+.work-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
 }
@@ -306,4 +291,96 @@ img {
 
 .contact-details:hover {
     transform: translateY(-8px);
+}
+
+/* Esports section */
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(128deg, #2E2C34 0%, #26373B 100%);
+  height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 960px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-div {
+  background: transparent;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline {
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+li {
+  margin: 16px 0;
+}
+
+#tribute-link {
+    text-decoration: underline;
+}
+
+#tribute-info > p {
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    width: 50%;
+    border: 50px yellow;
 }
